@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-//const STUDENT_URL = "https://biga-aci-be.herokuapp.com/student";
-const STUDENT_URL = "http://localhost:8086/student";
+const STUDENT_URL = "https://biga-aci-be.herokuapp.com/student";
+//const STUDENT_URL = "http://localhost:8086/student";
 class StudentService {
 
     createStudents(student) {

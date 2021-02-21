@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-//const SESSION_URL = "https://biga-aci-be.herokuapp.com/session/";
-const SESSION_URL = "http://localhost:8086/session/";
+const SESSION_URL = "https://biga-aci-be.herokuapp.com/session/";
+//const SESSION_URL = "http://localhost:8086/session/";
 class SessionService {
 
     getSessionsBySinavType(sinavType) {
