@@ -50,6 +50,7 @@ class SinavApplied extends React.Component {
   }
 
   getStudentsBySinavTypeAndSessionStartTime = (type, startTime) => {
+    this.setState({students: []})
     StudentService.getStutudentsBySinavTypeAndSessionStartTime(type, startTime)
       .then(res => {
         res.data.map(data =>

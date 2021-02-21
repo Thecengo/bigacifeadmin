@@ -1,5 +1,5 @@
 {
-  "name": "Bigaciadmin",
+  "name": "bigaaciadmin",
   "version": "1.2.0",
   "description": "Biga aci admin",
   "main": "index.js",
@@ -13,6 +13,7 @@
     "argon-dashboard",
     "argon-dashboard-react"
   ],
+ 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
