@@ -50,7 +50,6 @@ class SinavApplied extends React.Component {
   }
 
   getStudentsBySinavTypeAndSessionStartTime = (type, startTime) => {
-    this.setState({students: []})
     StudentService.getStutudentsBySinavTypeAndSessionStartTime(type, startTime)
       .then(res => {
         res.data.map(data =>
@@ -83,6 +82,10 @@ class SinavApplied extends React.Component {
   search = () => {
     console.log("search sinav tipi", this.state.sinavType)
     console.log("search session", this.state.session)
+    this.setState({
+      students: []
+    })
+    console.log("students...", this.state.students)
     this.getStudentsBySinavTypeAndSessionStartTime(this.state.sinavType, this.state.session);
   }
 
